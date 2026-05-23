@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 
 import { DESCRIPTIONS, NAV_ITEMS } from "@/constants";
 import { useScrollProgress } from "@/hooks/scrollProgress";
-import { ThemeSwitch } from "@/components/ThemeSwitch"
 
 export default function Navbar() {
   const progress = useScrollProgress();
@@ -100,8 +99,6 @@ export default function Navbar() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-3 mr-1">
-            <ThemeSwitch />
-
             {/* CTA */}
             <button
               onClick={() =>
