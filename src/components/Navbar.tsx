@@ -146,7 +146,7 @@ export default function Navbar() {
                 onClick={() =>
                   scrollTo(item)
                 }
-                className="py-2 text-left text-primary-foreground hover:text-emerald-400 transition-colors"
+                className="py-2 text-left text-primary hover:text-emerald-400 transition-colors"
               >
                 {item}
               </button>

@@ -18,7 +18,7 @@ export function About() {
               {DESCRIPTIONS.about_2}
             </p>
 
-            <div className="flex flex-wrap gap-3 pt-2 mt-2">
+            <div className="grid grid-cols-3 items-center gap-3 pt-2 mt-2">
               {TAGS.map(tag => (
                 <span key={tag} className="px-3 py-1 rounded-full text-xs font-semibold text-emerald-400 border border-emerald-500/30 bg-emerald-500/5">
                   {tag}
