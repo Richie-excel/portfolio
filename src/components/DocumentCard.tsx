@@ -1,7 +1,7 @@
 import { useInView } from "@/hooks/scrollProgress";
 import { useState } from "react";
 import type { Document  } from "@/types";
-import { Check, Download, Eye } from "lucide-react";
+import { Check, Download } from "lucide-react";
 
 interface DocumentCardProps {
   doc: Document;
@@ -74,21 +74,7 @@ export function DocumentCard({ doc, index }: DocumentCardProps) {
 
         {/* Action buttons */}
         <div className="flex gap-3 mt-4">
-          {/* Preview — opens in new tab */}
-          <a
-            href={doc.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl border text-sm font-bold transition-all duration-200 hover:bg-slate-800"
-            style={{ borderColor: "rgba(71,85,105,0.5)", color: "#94a3b8" }}
-          >
-            <span>
-              <Eye/>
-            </span>
-            Preview
-          </a>
 
-          {/* Download — uses HTML download attribute for forced file download */}
           <a
             href={doc.href}
             download={doc.filename}
